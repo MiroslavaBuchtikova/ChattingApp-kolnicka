@@ -7,17 +7,22 @@ O- optional
 
 Install:
 M - Install Git: https://gitforwindows.org/
+
 M/O - Create account on GitHub: https://github.com/
+
 M/O - IDE: Visual Studio 2022 (Community) https://visualstudio.microsoft.com/vs/
   - Extensions:
   O - Resharper https://www.jetbrains.com/resharper/
+  
 M/O - IDE: Visual Studio Code https://code.visualstudio.com/
   - Extensions:
 O -   https://marketplace.visualstudio.com/items?itemName=donjayamanne.git-extension-pack
+
 O -   https://marketplace.visualstudio.com/items?itemName=kamikillerto.vscode-colorize
 
 
 M - Install node.js https://nodejs.org/en/download/
+
 M - Install angular https://angular.io/cli
 
 Good to know:
