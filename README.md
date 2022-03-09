@@ -6,6 +6,10 @@ Pre-requirements:
 Install:
 - Create account on GitHub: https://github.com/
 - IDE: Visual Studio 2022 https://visualstudio.microsoft.com/vs/
+  - Extensions:
+  -   https://marketplace.visualstudio.com/items?itemName=donjayamanne.git-extension-pack
+  -   https://marketplace.visualstudio.com/items?itemName=kamikillerto.vscode-colorize
+- https://marketplace.visualstudio.com/items?itemName=kamikillerto.vscode-colorize
 - IDE: Visual Studio Code https://code.visualstudio.com/
 - Resharper https://www.jetbrains.com/resharper/
 - Install Git: https://gitforwindows.org/
