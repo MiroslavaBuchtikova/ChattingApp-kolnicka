@@ -2,21 +2,23 @@
 Let's develop chatting app with .net core web api and Angular :)
 
 Pre-requirements:
+M- mandatory
+O- optional
 
 Install:
-- Create account on GitHub: https://github.com/
-- IDE: Visual Studio 2022 https://visualstudio.microsoft.com/vs/
+M - Install Git: https://gitforwindows.org/
+M/O - Create account on GitHub: https://github.com/
+M/O - IDE: Visual Studio 2022 (Community) https://visualstudio.microsoft.com/vs/
   - Extensions:
-  -   https://marketplace.visualstudio.com/items?itemName=donjayamanne.git-extension-pack
-  -   https://marketplace.visualstudio.com/items?itemName=kamikillerto.vscode-colorize
-- https://marketplace.visualstudio.com/items?itemName=kamikillerto.vscode-colorize
-- IDE: Visual Studio Code https://code.visualstudio.com/
-- Resharper https://www.jetbrains.com/resharper/
-- Install Git: https://gitforwindows.org/
-- Install SQL Management Studio https://docs.microsoft.com/en-us/sql/ssms/download-sql-server-management-studio-ssms?view=sql-server-ver15
-- Install node.js https://nodejs.org/en/download/
-- Install npm https://www.npmjs.com/package/npm
-- Install angular https://angular.io/cli
+  O - Resharper https://www.jetbrains.com/resharper/
+M/O - IDE: Visual Studio Code https://code.visualstudio.com/
+  - Extensions:
+O -   https://marketplace.visualstudio.com/items?itemName=donjayamanne.git-extension-pack
+O -   https://marketplace.visualstudio.com/items?itemName=kamikillerto.vscode-colorize
+
+
+M - Install node.js https://nodejs.org/en/download/
+M - Install angular https://angular.io/cli
 
 Good to know:
 
