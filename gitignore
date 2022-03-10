@@ -31,7 +31,6 @@ typings/
 e2e/*.js
 e2e/*.map
 
-_ReSharper*/
 # System Files
 .DS_Store/
 
@@ -51,8 +50,6 @@ obj/
 !.vscode/launch.json
 !.vscode/extensions.json
 !.vscode/*.code-snippets
-
-.vs/*
 
 # Local History for Visual Studio Code
 .history/
@@ -421,6 +418,7 @@ ASALocalRun/
 # NVidia Nsight GPU debugger configuration file
 *.nvuser
 
+_ReSharper*/
 # MFractors (Xamarin productivity tool) working folder
 .mfractor/
 
