@@ -29,7 +29,7 @@ namespace ChatAppBackend.Controllers
         {
             if (!ModelState.IsValid) return BadRequest("Invalid messageDto");
 
-            _hubContext.Clients.All.SendAsync("SendMessage", message);
+            await _hubContext.Clients.All.SendAsync("SendMessage", message);
             message.Message += " Aha!";
             return Ok(message);
         }
