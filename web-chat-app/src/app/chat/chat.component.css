@@ -1,0 +1,10 @@
+.right {
+  display: flex;
+  justify-content: end;
+  background-color: cadetblue;
+}
+.left {
+  display: flex;
+  justify-content: start;
+  background-color: blanchedalmond;
+}
