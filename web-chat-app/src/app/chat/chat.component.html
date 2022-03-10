@@ -1,0 +1,44 @@
+<div class="container">
+  <div class="card">
+    <div class="card-header">Chatting app</div>
+    <div class="card-body">
+      <ng-container *ngFor="let msg of msgInboxArray">
+        <div class="msg-container"
+          [ngClass]="{
+            left: msg.user !== f['username'].value,
+            right: msg.user === f['username'].value
+          }"
+        >
+          <p class="user">{{ msg.user }}</p>
+          <p class="message">
+            {{ msg.message }}
+          </p>
+        </div>
+      </ng-container>
+    </div>
+    <!-- <div class="card-footer">Footer</div> -->
+  </div>
+  <form [formGroup]="form">
+    <div class="row">
+      <div class="col">
+        <input
+          type="text"
+          class="form-control"
+          placeholder="Enter username"
+          formControlName="username"
+        />
+      </div>
+      <div class="col">
+        <input
+          type="text"
+          class="form-control"
+          placeholder="Enter message"
+          formControlName="messageText"
+        />
+      </div>
+      <div class="col">
+        <button (click)="onSubmit()" class="btn btn-primary">Submit</button>
+      </div>
+    </div>
+  </form>
+</div>

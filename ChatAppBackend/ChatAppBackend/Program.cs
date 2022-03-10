@@ -24,6 +24,8 @@ app.UseRouting();
 
 app.UseAuthorization();
 
+app.UseCors(o => o.AllowAnyOrigin().AllowAnyHeader().AllowAnyMethod());
+
 app.MapControllers();
 
 app.UseEndpoints(options =>

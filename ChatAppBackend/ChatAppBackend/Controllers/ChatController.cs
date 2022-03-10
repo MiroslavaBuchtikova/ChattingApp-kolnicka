@@ -23,11 +23,11 @@ namespace ChatAppBackend.Controllers
         }
 
         [HttpPost]
-        public IActionResult SendMessage(ChatMessage message)
+        public async Task<IActionResult> SendMessage([FromBody] ChatMessage message)
         {
             if (!ModelState.IsValid) return BadRequest("Invalid message");
 
-            _hubContext.Clients.All.SendAsync("SendMessage", message);
+            await _hubContext.Clients.All.SendAsync("SendMessage", message);
             message.Message += " Aha!";
             return Ok(message);
         }
