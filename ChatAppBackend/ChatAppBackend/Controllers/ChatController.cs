@@ -1,4 +1,5 @@
 ﻿using ChatAppBackend.Hubs;
+using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.AspNetCore.SignalR;
@@ -6,6 +7,7 @@ using Microsoft.AspNetCore.SignalR;
 namespace ChatAppBackend.Controllers
 {
     [Route("api/[controller]")]
+    [Authorize]
     [ApiController]
     public class ChatController : ControllerBase
     {
@@ -23,13 +25,13 @@ namespace ChatAppBackend.Controllers
         }
 
         [HttpPost]
-        public IActionResult SendMessage(ChatMessage message)
+        public IActionResult SendMessage(MessageDto messageDto)
         {
-            if (!ModelState.IsValid) return BadRequest("Invalid message");
+            if (!ModelState.IsValid) return BadRequest("Invalid messageDto");
 
-            _hubContext.Clients.All.SendAsync("SendMessage", message);
-            message.Message += " Aha!";
-            return Ok(message);
+            _hubContext.Clients.All.SendAsync("SendMessage", messageDto);
+            messageDto.Message += " Aha!";
+            return Ok(messageDto);
         }
     }
 }
