@@ -2,7 +2,7 @@
 
 namespace ChatAppBackend.Controllers;
 
-public class ChatMessage
+public class MessageDto
 {
     [Required]
     public string User { get; set; }
