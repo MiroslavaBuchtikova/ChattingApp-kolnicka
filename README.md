@@ -1,6 +1,8 @@
 # ChattingApp-kolnicka
 Let's develop chatting app with .net core web api and Angular :)
 
+This works: https://github.com/MiroslavaKarasova/ChattingApp :)
+
 Pre-requirements:
 M- mandatory
 O- optional
